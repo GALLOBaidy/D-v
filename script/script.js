@@ -53,24 +53,24 @@
 //   }
 
 
-let x = 11;
-let y = 5;
+// let x = 11;
+// let y = 5;
 
-console.log(y += y);
+// console.log(y += y);
 
 
-var modele = "Laguna";
-switch (modele) {
-    case "508":
-        console.log("Modèle 508 : marque Peugeot"); break;
-    case "Laguna":
-    case "Clio":
-        console.log("Modèle Laguna : marque Renault"); break;
-    case "C5":
-        console.log("Modèle C5 : marque Citroën"); break;
-    default:
-        console.log("Modèle " + modele + ": marque inconnue");
-}
+// var modele = "Laguna";
+// switch (modele) {
+//     case "508":
+//         console.log("Modèle 508 : marque Peugeot"); break;
+//     case "Laguna":
+//     case "Clio":
+//         console.log("Modèle Laguna : marque Renault"); break;
+//     case "C5":
+//         console.log("Modèle C5 : marque Citroën"); break;
+//     default:
+//         console.log("Modèle " + modele + ": marque inconnue");
+// }
 
 
 
@@ -113,6 +113,7 @@ switch (modele) {
 // Le "parseInt" permet d'exiger que la valeur saisie soit un chiffre.
 // Le "resultadd" n'est pas défini à l'avance parce que c'est le résultat de l'opération qu'on veut obtenir
 // On "switch" la valeur "opérateur" car c'est elle qui prend différents opérateur.
+
 // let number1 = parseInt(prompt("Saissir un chiffre"));
 // let operateur = prompt("Saissir un opérateur");
 // let number2 = parseInt(prompt("Saissir un autre chiffre"));
@@ -153,9 +154,9 @@ switch (modele) {
 // let PU = parseInt(prompt("Quel est le prix de ce produit ?"));
 // let QTECOM = parseInt(prompt("Combien en voulez-vous ?"));
 // let PAP= PU*QTECOM;
-let PORT;
-let REM;
-let TOT;
+// let PORT;
+// let REM;
+// let TOT;
 
 
 // if (PAP>500) {
@@ -244,9 +245,156 @@ let TOT;
 
 
 // Boucle do...while
-var i = 0
-console.log("Table de multiplication par 5"); console.log("=============================");
-do {
-    resultat = 5 * i;
-    console.log("5 * " + i + " = " + resultat); i++;
-} while (i <= 10);
+// var i = 0
+// console.log("Table de multiplication par 5"); console.log("=============================");
+// do {
+//     resultat = 5 * i;
+//     console.log("5 * " + i + " = " + resultat); i++;
+// } while (i <= 10);
+
+
+
+// Exo 1 : Saisie
+// Créer une page HTML qui demande à l’utilisateur un prénom.
+// La page doit continuer à demander des prénoms à l’utilisateur jusqu’à ce qu’il laisse le champ vide. Enfin, la page affiche sur la console le nombre de prénoms et les prénoms saisis.
+
+// Le premier console.log affiche le premier nom saisit; ainsi de suite...
+// let nom = prompt("Saissisez un prénom");
+// console.log(nom);
+// while(nom!=""){
+//     nom= prompt("Saisissez un autre nom");
+//     console.log(nom);
+// }
+
+
+
+
+
+// var guessedWord = prompt("Quel est le mot auquel je pense?");
+//     while(guessedWord != "burger"){
+//         // if (guessedWord=="")  break;    
+        
+//         guessedWord=prompt("Non ce n'est pas ça essaie encore!");
+//     }
+//     alert("Félicitation vous avez trouvez");
+
+
+
+// Exo 2 : Ecrivez un programme qui affiche les nombres inférieurs à N.
+
+
+// let N = parseInt(prompt("Saisir"));
+
+
+// for (let i = 0; i < 10 ;i-- ){
+//     console.log(N--);
+//     if (N==0) {
+//         break;
+//     }
+// }
+// while(true){
+//     console.log(N--);
+// }
+
+
+// Exo 3 : Ecrivez un programme qui affiche la somme des nombres inférieurs à N.
+
+// let N = parseInt(prompt("Saisissez un chiffre"));
+// let somme = 0;
+// do {
+//     // N=N--
+//     somme+=N;
+//     console.log(N--);
+    
+// } while (N>0); 
+// console.log(somme);
+
+// Exo 4 : Ecrivez un programme qui saisit deux nombres n1 et n2 et qui calcul ensuite la somme des entiers de n1 à n2.
+
+
+// let n1 = prompt("Saississez un chiffre");
+// let n2 = prompt("Saississez un second chiffre");
+// let somme= ;
+
+
+// for (n1 < n2; n1 += n2; n1++) {
+//     console.log(n1);
+//     ;
+
+// }
+
+
+// Exo 5 : Ecrire un programme qui siaisit des entiers et en affiche la somme et la moyenne (on arrêete la saisie avec la valeur 0)
+
+let nbCount=0; //variable global pour le nombre de chiffre
+let nbSum =0; //variable global pour la somme
+let nbInput ; //variable global pour la saisis du nombre
+
+while (nbInput !==0){
+    nbInput = parseFloat(prompt("Saisis un nombre (0 pour finir)")); //Saisis un nombre 
+
+    console.log(nbInput); //Affiche dans la console la saisie
+    nbSum += nbInput; // la somme + la saisie
+    nbCount++; //Augementation du nombre de chiffre après la saisie => Calcule le nombre de saisie
+    }
+    let nbAverage = nbSum / nbCount; // Calcule la moyenne, somme/le nombre de chiffre saisis
+
+    console.log("-----BREAK-----");
+    console.log("Somme de la série: " + nbSum);
+    console.log("Moyenne de la série: " + nbAverage);
+    
+    
+
+
+
+
+
+
+
+
+// Correction Guillaume
+
+// let PU = parseFloat(prompt("Saisir un prix unitaire"));
+// let QTECOM = parseInt(prompt("Saisir une quantité"));
+// let PAP = 0;
+// let PORT = 0;
+// let REM = 0;
+// let TOTAL = PU * QTECOM;
+// if (TOTAL <= 500) {
+//   PORT = TOTAL * 0.02;
+//   if (PORT < 6) {
+//     PORT = 6;
+//   }
+// }
+// if (TOTAL >= 100 && TOTAL <= 200) {
+//   REM = TOTAL * 0.05;
+// } else if (TOTAL > 200) {
+//   REM = TOTAL * 0.1;
+// }
+// PAP = TOTAL + PORT - REM;
+// console.log("TOTAL : " + TOTAL);
+// console.log("PORT : " + PORT);
+// console.log("REMISE : " + REM);
+// console.log("TOTAL A PAYER : " + PAP);
+
+
+
+
+
+// let iParticipation = 0;
+// let bStatutMarital = confirm("Êtes vous célibataire (OK)/ Marié(e) (Annuler)?");
+// let iNbEnfants = parseInt(prompt("Combien d'enfants avez vous?"));
+// let iSalaire = parseInt(prompt("Quel est votre salaire?"));
+// if (bStatutMarital) {
+//  iParticipation += 20;
+// } else {
+//  iParticipation += 25;
+// }
+// iParticipation += 10 * iNbEnfants;
+// if (iSalaire < 1200) {
+//  iParticipation += 10;
+// }
+// if (iParticipation > 50) {
+//  iParticipation = 50;
+// }
+// alert(iParticipation);
