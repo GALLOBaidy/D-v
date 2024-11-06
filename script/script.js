@@ -273,27 +273,27 @@
 // var guessedWord = prompt("Quel est le mot auquel je pense?");
 //     while(guessedWord != "burger"){
 //         // if (guessedWord=="")  break;    
-        
+
 //         guessedWord=prompt("Non ce n'est pas ça essaie encore!");
 //     }
 //     alert("Félicitation vous avez trouvez");
 
 
 
-// Exo 2 : Ecrivez un programme qui affiche les nombres inférieurs à N.
+// // Exo 2 : Ecrivez un programme qui affiche les nombres inférieurs à N.
 
 
 // let N = parseInt(prompt("Saisir"));
 
+// while(N>0){
+//     console.log(N--);
+// }
 
 // for (let i = 0; i < 10 ;i-- ){
 //     console.log(N--);
 //     if (N==0) {
 //         break;
 //     }
-// }
-// while(true){
-//     console.log(N--);
 // }
 
 
@@ -305,7 +305,7 @@
 //     // N=N--
 //     somme+=N;
 //     console.log(N--);
-    
+
 // } while (N>0); 
 // console.log(somme);
 
@@ -326,19 +326,79 @@
 
 // Exo 5 : Ecrire un programme qui siaisit des entiers et en affiche la somme et la moyenne (on arrêete la saisie avec la valeur 0)
 
-let nbCount=0; //variable global pour le nombre de chiffre
-let nbSum =0; //variable global pour la somme
-let nbInput ; //variable global pour la saisis du nombre
+// let nbCount=0; //variable global pour le nombre de chiffre
+// let nbSum =0; //variable global pour la somme
+// let nbInput ; //variable global pour la saisis du nombre
 
-while (nbInput !==0){
-    nbInput = parseFloat(prompt("Saisis un nombre (0 pour finir)")); //Saisis un nombre 
+// while (nbInput !==0){
+//     nbInput = parseFloat(prompt("Saisis un nombre (0 pour finir)")); //Saisis un nombre 
+
+//     console.log(nbInput); //Affiche dans la console la saisie
+//     nbSum += nbInput; // la somme + la saisie
+//     nbCount++; //Augementation du nombre de chiffre après la saisie => Calcule le nombre de saisie
+//     }
+//     let nbAverage = nbSum / nbCount; // Calcule la moyenne, somme/le nombre de chiffre saisis
+
+//     console.log("-----BREAK-----");
+//     console.log("Somme de la série: " + nbSum);
+//     console.log("Moyenne de la série: " + nbAverage);
 
 
-    console.log("-----BREAK-----");
-    console.log("Somme de la série: " + nbSum);
-    console.log("Moyenne de la série: " + nbAverage);
+//Exo 7 : Ecrire un programme qui calcule les N premiers multiples d'un nombre entier X, N et X étant entrés au clavier.
+// Exemple pour N=5 et X=7 :
+// 1 x 7 = 7
+// 2 x7 = 14
+// 3 x7 = 21
+// 4 x7 = 28
+// 5 x7 = 35
+
+// let N = 0;
+// let X = 0;
+// let n=0;
+// let msg ="";
+// N = parseInt(prompt("Saisir un chiffre"));
+// X = parseInt(prompt("Saisir un multiple"));
+// console.log(N);
+// console.log(X);
+
+//A chaque retour dans la boucle, on vérifie si n (qui est égal à 0 de base) est inférieur à N(valeur saisie par l'utilisateur). Si c'est le cas on incrémente 1 à n et on renvoit n*X; Grâce à la variable 'msg' et on revérifie notre condition jusqu'à qu'ele ne soit plus vérifié. Réalisable avec la boucle 'for' comme avec la boucle 'while'. 
+
+// while (n<N) {
+//     n++;
+//     msg+= n+" x " + X + " = " + (n*X)+ "\n";    
+// }
+// alert(msg);
+
+// for (n=0; n<=N; n++){
+//     msg+= n+" x " + X + " = " + (n*X)+ "\n";    
     
-    
+//     alert(msg);
+// }
+
+//Exo 9 : Il s’agit de dénombrer les personnes d'âge strictement inférieur à 20 ans, les personnes d'âge strictement supérieur à 40 ans et celles dont l'âge est compris entre 20 ans et 40 ans (20 ans et 40 ans y compris).
+// Le programme doit demander les âges successifs.
+// Le comptage est arrêté dès la saisie d’un centenaire. Le centenaire est compté. Donnez le programme Javascript correspondant qui affiche les résultats.
+
+let age = 0;
+let msg = "";
+
+//Tant que l'âge saisit est inférieur à 100 la boucle redemande de saisir un âge. En fonction de l'âge saisit on détermine si la personne est jeune, adulte ou vieux.
+
+while(age<100){
+    age = parseInt(prompt("Quel est votre âge ?"));
+    msg= age+ " ans" + "\n" ;
+    console.log(msg)
+        if (age<20) {
+            console.log("Vous êtes jeune");
+        }else if (age>=20 && age <=40){
+            console.log("Vous êtes adulte");          
+        }else{
+            console.log("Vous êtes vieux");   
+        }
+    ;
+};
+
+
 
 
 
