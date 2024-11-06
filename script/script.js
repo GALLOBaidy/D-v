@@ -333,11 +333,6 @@ let nbInput ; //variable global pour la saisis du nombre
 while (nbInput !==0){
     nbInput = parseFloat(prompt("Saisis un nombre (0 pour finir)")); //Saisis un nombre 
 
-    console.log(nbInput); //Affiche dans la console la saisie
-    nbSum += nbInput; // la somme + la saisie
-    nbCount++; //Augementation du nombre de chiffre après la saisie => Calcule le nombre de saisie
-    }
-    let nbAverage = nbSum / nbCount; // Calcule la moyenne, somme/le nombre de chiffre saisis
 
     console.log("-----BREAK-----");
     console.log("Somme de la série: " + nbSum);
