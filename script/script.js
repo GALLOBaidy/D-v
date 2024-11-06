@@ -303,7 +303,7 @@
 // let somme = 0;
 // do {
 //     // N=N--
-//     somme+=N;
+//     somme+=N; 
 //     console.log(N--);
 
 // } while (N>0); 
@@ -379,24 +379,24 @@
 // Le programme doit demander les âges successifs.
 // Le comptage est arrêté dès la saisie d’un centenaire. Le centenaire est compté. Donnez le programme Javascript correspondant qui affiche les résultats.
 
-let age = 0;
-let msg = "";
+// let age = 0;
+// let msg = "";
 
 //Tant que l'âge saisit est inférieur à 100 la boucle redemande de saisir un âge. En fonction de l'âge saisit on détermine si la personne est jeune, adulte ou vieux.
 
-while(age<100){
-    age = parseInt(prompt("Quel est votre âge ?"));
-    msg= age+ " ans" + "\n" ;
-    console.log(msg)
-        if (age<20) {
-            console.log("Vous êtes jeune");
-        }else if (age>=20 && age <=40){
-            console.log("Vous êtes adulte");          
-        }else{
-            console.log("Vous êtes vieux");   
-        }
-    ;
-};
+// while(age<100){
+//     age = parseInt(prompt("Quel est votre âge ?"));
+//     msg= age+ " ans" + "\n" ;
+//     console.log(msg)
+//         if (age<20) {
+//             console.log("Vous êtes jeune");
+//         }else if (age>=20 && age <=40){
+//             console.log("Vous êtes adulte");          
+//         }else{
+//             console.log("Vous êtes vieux");   
+//         }
+//     ;
+// };
 
 
 
