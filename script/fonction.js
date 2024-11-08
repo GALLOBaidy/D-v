@@ -118,6 +118,7 @@
 //Le .length permet de voir combien de lettre il y a dans la phrase
 //Le [i] permet de considérer la variable phrase comme un tableau
 // Le return permet de renvoyer la variable count; c'est à dire le nombre de lettre qui a été compté
+
 // function nbLtr(phrase, lettre) {
 
 //   let count = 0; 
